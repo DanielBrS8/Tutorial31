@@ -8,7 +8,7 @@ export default function Formulario() {
   const [errorEdad,setErrorEdad] = useState("")
   const [contraseñaOculta,setContraseñaOculta] = useState(true)
   const [textoBusqueda,setTextoBusqueda] = useState("")
-  const  [terminosLeido,setTerminosLeidos] = useState("false")
+  const  [terminosLeido,setTerminosLeidos] = useState(false)
 
   function validadEdad(){
 
