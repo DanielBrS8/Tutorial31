@@ -5,6 +5,8 @@ import { temaClaro } from 'themes/TemaClaro';
 import { temaOscuro } from 'themes/TemaOscuro';
 import Botones from 'components/Botones';
 import Formulario from 'components/Formulario';
+import Listas from 'screens/Listas';
+import Targetas from 'screens/Targetas';
 
 
 export default function App() {
@@ -12,14 +14,9 @@ export default function App() {
   const temaActivo = useColorScheme()
 
   return (
-    <PaperProvider theme={temaActivo==="light"? temaClaro : temaOscuro}>
-
-      
-      <Botones></Botones>
-
-      <Formulario></Formulario>
-
-
+    <PaperProvider theme={temaActivo==="light"? temaClaro : temaOscuro}>  
+      <Listas></Listas>
+      <Targetas></Targetas>
     </PaperProvider>
   );
 }
